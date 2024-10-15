@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - DT Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/edc8d5fc95.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white text-gray-800">
+    
+    <!-- Barre de navigation -->
+    <header class="w-full shadow-lg bg-white">
+        <div class="container mx-auto flex flex-row md:flex-row-reverse items-center justify-between py-4 px-6">
+            <div class="flex items-center">
+                <img src="assets/head-woman.jpg" alt="Logo" class="h-8 w-8 lg:h-16 lg:w-16 rounded-full">
+            </div>
+            <div>
+                <h1 class="text-2xl lg:text-3xl font-bold font-blue-950">Student's Book</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteneur principal -->
+    <div class="container mx-auto my-12 px-8 lg:mt-20">
+        <!-- Profil de l'utilisateur -->
+        <div class="flex flex-col lg:flex-row lg:space-x-12">
+            <!-- Partie gauche avec photo et infos -->
+            <div class="lg:w-1/3">
+                <div class="flex items-start justify-between w-full">
+                    <a href="./index.html">
+                        <i class="fa-regular fa-arrow-left bg-gray-200 p-3 rounded-full shadow-md w-16 h-16 flex items-center justify-center text-2xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                    </a>
+                    <img src="assets/man.jpg" alt="Profile Image" class="w-48 h-48 lg:w-72 lg:h-72 rounded-full shadow-md object-cover">
+                    <i class="fa-regular fa-stars bg-gray-200 p-3 rounded-full shadow-md w-16 h-16 flex items-center justify-center text-2xl transition-transform transform hover:scale-110 active:scale-90 duration-200 activate:bg-gray-400"></i>
+                </div>
+
+                <div class="text-center mt-6 lg:flex lg:flex-col lg:items-center lg:space-y-">
+                    <h2 class="text-2xl lg:text-3xl text-blue-950">Killian Marius</h2>
+                    <p class="text-xl text-blue-950">Étudiant(e)</p>
+                    <p class="text-lg text-blue-950"><i class="fas fa-map-marker-alt"></i> <span class="font-bold">Nantes</span>, France</p>
+                    <p class="text-lg text-blue-950"><i class="fa-solid fa-school mr-2"></i> 1e année</p>
+                    <div class="flex items-center justify-center mt-4">
+                        <img src="assets/schools/epsi.png" alt="EPSI" class="w-8">
+                        <p class="text-xl text-blue-950 font-bold ml-2">EPSI</p>
+                    </div>
+                </div>
+
+                <!-- Icônes de contact mobile -->
+                <div class="lg:hidden flex justify-center mt-6 space-x-20">
+                    <i class="fa-regular fa-phone bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                    <i class="fa-regular fa-envelope bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                    <i class="fa-brands fa-instagram bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                </div>
+                
+            </div>
+
+            <!-- Partie droite avec les sections d'information -->
+            <div class="mt-8 lg:mt-0 lg:w-2/3">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <div class="hidden lg:block p-6 bg-gray-50 rounded-lg shadow-md">
+                        <div class="flex flex-col space-y-4">
+                            <div class="flex items-center">
+                                <i class="fa-brands fa-instagram bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center mr-4 text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                                <span class="text-lg">@mariuskillian_49</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-phone bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center mr-4 text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                                <span class="text-lg">06 06 07 07 08</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-envelope bg-gray-200 p-3 rounded-full shadow-md w-12 h-12 flex items-center justify-center mr-4 text-xl transition-transform transform hover:scale-110 active:scale-90 duration-200"></i>
+                                <span class="text-lg">marius.killian@jamal.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-xl mb-3">Description :</h3>
+                        <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor non turpis at fermentum. Aenean dictum diam in finibus faucibus.</p>
+                    </div>
+
+                    <!-- Études -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-xl mb-3">Études :</h3>
+                        <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor non turpis at fermentum. Morbi tempus dolor arcu.</p>
+                    </div>
+
+                    <!-- Hobbies -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-xl mb-3">Hobbies :</h3>
+                        <p class="text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum diam in finibus faucibus. Pellentesque habitant morbi tristique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

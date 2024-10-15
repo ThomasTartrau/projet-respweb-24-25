@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - DT Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/edc8d5fc95.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+    
+    <!-- Barre de navigation -->
+    <header class="w-full shadow-lg bg-white">
+        <div class="container mx-auto flex flex-row md:flex-row-reverse items-center justify-between py-4 px-6">
+            <div class="flex items-center">
+                <img src="assets/head-woman.jpg" alt="Logo" class="h-8 w-8 lg:h-16 lg:w-16 rounded-full">
+            </div>
+            <div>
+                <h1 class="text-2xl lg:text-3xl font-bold font-blue-950">Student's Book</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteneur principal -->
+    <div class="container mx-auto">
+        <!-- Section de recherche -->
+        <div id="searchs">
+            <section class="rounded-lg bg-stone-100 w-5/6 max-w-lg mx-auto mt-12">
+                <div class="flex justify-between gap-4">
+                    <div class="flex items-center grow rounded-lg bg-stone-300 px-2">
+                        <i class="fa-solid fa-magnifying-glass mr-2 text-gray-800"></i>
+                        <input id="searchinput" type="text" placeholder="Rechercher" class="w-full rounded bg-stone-300 focus:outline-none placeholder-gray-800">
+                    </div>
+    
+                    <div class="flex items-center p-2">
+                        <i class="fa-sharp fa-solid fa-filter-list mr-2 text-blue-400"></i>
+                        <select name="filter" id="filter" class="bg-stone-100 focus:outline-none appearance-none">
+                            <option disabled value="1">Filtrer</option>
+                            <option value="2">Nom</option>
+                            <option value="3">Ecole</option>
+                            <option value="4">Ville</option>
+                            <option value="5">Année</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="flex justify-between mt-2 w-5/6 max-w-lg mx-auto lg:justify-end">
+            <div class="lg:hidden text-sm lg:text-lg">
+                <span class="font-bold text-blue-900">1024</span> résultats
+            </div>
+            <div class="text-blue-400 text-sm lg:text-lg font-bold">
+                <button id="addfilter">+ <span class="underline">Filtres</span></button>
+            </div>
+        </section>
+
+        <div class="hidden lg:block text-sm lg:text-2xl ml-4">
+            <span class="font-bold text-blue-900">1024</span> résultats
+        </div>
+
+        <!-- Résultats de recherche -->
+        <section class="mt-12 lg:mt-6">
+            <div class="grid gap-4 xl:gap-8 px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2" id="profiles"></div>
+        </section>
+    </div>
+</body>
+</html>
